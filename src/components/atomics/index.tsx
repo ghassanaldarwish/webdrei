@@ -42,24 +42,25 @@ export default function Atomics() {
     <Atom key="logo12" className="w-[100%] h-[100%]" />,
     <USDC key="logo13" className="w-[100%] h-[100%]" />,
     <USDC key="logo14" className="w-[100%] h-[100%]" />,
-    <Atom key="logo15" className="w-[100%] h-[100%]" />,
-    <USDC key="logo16" className="w-[100%] h-[100%]" />,
-    <USDC key="logo7" className="w-[100%] h-[100%]" />,
+    <div key="logo15" className="w-[100%] h-[100%]" />,
+    <div key="logo16" className="w-[100%] h-[100%]" />,
     <div key="logo12" className="w-[80%] h-[80%]"></div>,
+    <USDC key="logo7" className="w-[100%] h-[100%]" />,
+
     <USDC key="logo9" className="w-[100%] h-[100%]" />,
     <Atom key="logo10" className="w-[100%] h-[100%]" />,
     <Kuji key="logo11" className="w-[100%] h-[100%]" />,
     <USDC key="logo12" className="w-[100%] h-[100%]" />,
 
-    <div key="logo12" className="w-[80%] h-[80%]"></div>,
+    <USDC key="logo12" className="w-[80%] h-[80%]"></USDC>,
 
     <div key="logo12" className="w-[80%] h-[80%]"></div>,
 
     <div key="logo12" className="w-[80%] h-[80%]"></div>,
-    <USDC key="logo13" className="w-[100%] h-[100%]" />,
+    <div key="logo13" className="w-[100%] h-[100%]" />,
     <Atom key="logo13" className="w-[100%] h-[100%]" />,
-    <div key="logo12" className="w-[80%] h-[80%]"></div>,
-    <div key="logo12" className="w-[80%] h-[80%]"></div>,
+    <Atom key="logo12" className="w-[80%] h-[80%]"></Atom>,
+    <Atom key="logo12" className="w-[80%] h-[80%]"></Atom>,
     <div key="logo12" className="w-[80%] h-[80%]"></div>,
     <div key="logo12" className="w-[80%] h-[80%]"></div>,
     <div key="logo12" className="w-[80%] h-[80%]"></div>,
@@ -95,8 +96,12 @@ export default function Atomics() {
                 className={cn(
                   " w-12 h-12 place-items-center place-self-center",
 
-                  { " w-20 h-20": isInclude(index, [22, 6, 2]) },
-                  { " w-16 h-16": isInclude(index, [13]) },
+                  {
+                    " w-20 h-20": isInclude(index, [22, 6, 2]),
+                  },
+                  {
+                    " w-16 h-16": isInclude(index, [13]),
+                  },
                   {
                     " justify-self-center w-16 h-16 self-end": isInclude(
                       index,
@@ -121,22 +126,16 @@ export default function Atomics() {
                       [14, 5, 15, 16, 25, 26, 6]
                     ),
                   },
+
                   {
-                    " justify-self-end  self-start": isInclude(index, [34]),
+                    "justify-self-end": isInclude(index, [27]),
+                  },
+                  {
+                    "justify-self-start": isInclude(index, [32, 35]),
                   },
 
                   {
-                    " justify-self-start  self-start": isInclude(index, [37]),
-                  },
-                  {
-                    "justify-self-end": isInclude(index, [35, 27]),
-                  },
-                  {
-                    "justify-self-start": isInclude(index, [32, 36]),
-                  },
-
-                  {
-                    "self-start": isInclude(
+                    "w-20 h-20 ": isInclude(
                       index,
                       [
                         58,
@@ -151,7 +150,7 @@ export default function Atomics() {
               </div>
             );
           })}
-          <div className="row-start-4 w-26 h-26 col-start-4 col-span-3 row-span-3 flex items-center justify-center">
+          <div className="row-start-4 w-26 h-26 absolute top-[53%] left-1/2 -translate-x-1/2   col-start-4 col-span-3 row-span-3 flex items-center justify-center">
             <Logo className="w-[40%] h-[40%]" />
           </div>
         </div>
