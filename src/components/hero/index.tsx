@@ -9,21 +9,15 @@ import { buttonVariants } from "@/components/ui/button";
 import useTextDirection from "@/hooks/useTextDirection";
 import Logo from "../logo";
 import View from "./view";
+import { WavyBackground } from "../wavy-background";
 
 export default function Hero() {
   const t = useTranslations("Index");
   const direction = useTextDirection();
 
   return (
-    <div className="container  ">
-      <div className="flex relative flex-col lg:flex-row  items-center justify-between py-6 ">
-        <Image
-          className="absolute opacity-30 left-1/2 w-[40%] top-1/2 transform -translate-x-1/2 -translate-y-1/2  -z-10"
-          src="/lap.webp"
-          width={225}
-          height={225}
-          alt={""}
-        />
+    <WavyBackground backgroundFill="#1F221C" className="container  ">
+      <div className="flex relative     flex-col lg:flex-row  items-center justify-between py-6 ">
         <div className="basis-1/2 flex flex-col gap-6 lg:gap-10">
           <h1
             style={{ lineHeight: "1.3 !important" }}
@@ -58,6 +52,6 @@ export default function Hero() {
           <View />
         </div>
       </div>
-    </div>
+    </WavyBackground>
   );
 }

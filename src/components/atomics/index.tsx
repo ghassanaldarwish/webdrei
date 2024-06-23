@@ -13,16 +13,18 @@ export default function Atomics() {
   const t = useTranslations("Index");
   const direction = useTextDirection();
   return (
-    <HeroHighlight className="min-h-screen w-screen">
-      <div className="container  min-h-screen py-4">
-        <h2 className="scroll-m-20 text-center text-4xl font-extrabold tracking-tight lg:text-5xl">
-          Atomics
-        </h2>
+    <div className="bg-background z-10">
+      <HeroHighlight className="min-h-screen w-screen">
+        <div className="container  min-h-screen py-4">
+          <h2 className="scroll-m-20 text-center text-4xl font-extrabold tracking-tight lg:text-5xl">
+            Atomics
+          </h2>
 
-        <div className="flex mt-4  h-[90vh] justify-center items-center">
-          <Logo className="scale-150" />
+          <div className="flex mt-4  h-[90vh] justify-center items-center">
+            <Logo className="scale-150" />
+          </div>
         </div>
-      </div>
-    </HeroHighlight>
+      </HeroHighlight>
+    </div>
   );
 }

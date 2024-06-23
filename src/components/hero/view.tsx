@@ -5,21 +5,14 @@ import React from "react";
 import { CardBody, CardContainer, CardItem } from "@/components/3d-card-effect";
 import Link from "next/link";
 
-export default function View() {
+export default function ThreeDCardDemo() {
   return (
-    <CardContainer className="inter-var backdrop-blur-sm">
-      <CardBody className=" relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1]  dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
-        <CardItem
-          translateZ="50"
-          className="text-xl font-bold text-neutral-600 dark:text-white"
-        >
+    <CardContainer className="inter-var ">
+      <CardBody className="relative group/card  dark:hover:shadow-2xl    w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+        <CardItem translateZ="50" className="text-xl font-bold ">
           Trade On Web Drei
         </CardItem>
-        <CardItem
-          as="p"
-          translateZ="60"
-          className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
-        >
+        <CardItem as="p" translateZ="60" className=" text-sm max-w-sm mt-2 ">
           Strategic Problem-Solver in Decentralized Crypto Exchange
         </CardItem>
         <CardItem translateZ="100" className="w-full mt-4">
