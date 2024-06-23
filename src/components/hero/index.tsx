@@ -16,7 +16,7 @@ export default function Hero() {
   const direction = useTextDirection();
 
   return (
-    <WavyBackground backgroundFill="#1F221C" className="container  ">
+    <WavyBackground className="container  ">
       <div className="flex relative     flex-col lg:flex-row  items-center justify-between py-6 ">
         <div className="basis-1/2 flex flex-col gap-6 lg:gap-10">
           <h1

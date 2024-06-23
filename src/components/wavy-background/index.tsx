@@ -64,10 +64,10 @@ export const WavyBackground = ({
 
   const waveColors = colors ?? [
     "#FF3B30",
-    "#2D3227",
-    "#141614",
+    "#818cf8",
+    "#c084fc",
     "#0092FF",
-    "#F4F9E9",
+    "#22d3ee",
   ];
   const drawWave = (n: number) => {
     nt += getSpeed();
@@ -86,7 +86,7 @@ export const WavyBackground = ({
 
   let animationId: number;
   const render = () => {
-    ctx.fillStyle = backgroundFill || "black";
+    ctx.fillStyle = backgroundFill || "#1F221C";
     ctx.globalAlpha = waveOpacity || 0.5;
     ctx.fillRect(0, 0, w, h);
     drawWave(5);
@@ -118,7 +118,7 @@ export const WavyBackground = ({
       )}
     >
       <canvas
-        className="absolute inset-0 z-0 "
+        className="absolute inset-0 z-0 fill-red-500"
         ref={canvasRef}
         id="canvas"
         style={{

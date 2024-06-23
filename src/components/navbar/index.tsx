@@ -24,7 +24,7 @@ export default function Navbar() {
         <div className="flex items-center gap-2">
           <ConnectWallet />
 
-          <ModeToggle />
+          {/* <ModeToggle /> */}
           <MobileNavbar />
         </div>
       </div>
